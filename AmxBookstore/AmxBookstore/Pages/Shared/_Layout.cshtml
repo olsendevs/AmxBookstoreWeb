@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AmxBookstore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AmxBookstore.styles.css" asp-append-version="true" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">AmxBookstore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1" id="navMenu">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - AmxBookstore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        async function fetchWithToken(url, options = {}) {
+            const token = localStorage.getItem('jwt');
+            if (!token) {
+                throw new Error('No JWT token found in localStorage');
+            }
+
+            const headers = new Headers(options.headers || {});
+            headers.append('Authorization', `Bearer ${JSON.parse(token).accessToken}`);
+
+            const updatedOptions = {
+                ...options,
+                headers: headers
+            };
+
+            return fetch(url, updatedOptions);
+        }
+
+        function parseJwt(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+
+            return JSON.parse(jsonPayload);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navMenu = document.getElementById('navMenu');
+            const token = JSON.parse(localStorage.getItem('jwt'));
+
+            if (token) {
+                const role = token.role;
+
+                let menuHtml = '';
+
+                if (role === 'Admin') {
+                    menuHtml = `
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Orders/Index">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Books">Books</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Users">Users</a>
+                                </li>
+                            `;
+                } else if (role === 'Seller') {
+                    menuHtml = `
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Orders/Index">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Books">Books</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Users">Clients</a>
+                                </li>
+                            `;
+                } else if (role === 'Client') {
+                    menuHtml = `
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="/Protected/Orders/Index">Orders</a>
+                                </li>
+                            `;
+                }
+
+                menuHtml += `
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#" id="logoutLink">Logout</a>
+                            </li>
+                        `;
+
+                navMenu.innerHTML = menuHtml;
+
+                document.getElementById('logoutLink').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    localStorage.removeItem('jwt');
+                    window.location.href = '/';
+                });
+            }
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,562 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\docs\\Amx\\web\\AmxBookstore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\stock\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\stock\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\stock\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\stock\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\books\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\books\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\orders\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\orders\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\protectedpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\protectedpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\protected\\protectedpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\protected\\protectedpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|d:\\docs\\amx\\web\\amxbookstore\\amxbookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A91134-415F-43BE-A7C0-2B4BE231EB0A}|AmxBookstore\\AmxBookstore.csproj|solutionrelative:amxbookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Login.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Login.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Login.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwCIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T07:17:06.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAqwGgAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T07:19:12.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:13:29.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAmwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T14:06:28.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAmwH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:18:10.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T14:07:54.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Delete.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Delete.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Delete.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T12:42:09.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:57:20.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Edit.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Edit.cshtml",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAgwIUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T12:40:47.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAKoAAAAAAAAAAAAAAHkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T07:25:17.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:25:55.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T11:55:57.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAiwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:57:51.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Index.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAF0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:55:05.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAmwEYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T15:48:16.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Orders\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:48:11.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T14:50:55.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Stock\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:55:17.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAmwKAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:15:05.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:57:27.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:57:30.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Users\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:57:32.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:15:23.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:14:56.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Index.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T07:42:47.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:14:43.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:14:52.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\Books\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:15:00.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:44:36.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:24:55.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProtectedPage.cshtml",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T07:18:04.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Program.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Program.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Program.cs",
+              "RelativeToolTip": "AmxBookstore\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:14:21.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProtectedPage.cshtml.cs",
+              "DocumentMoniker": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml.cs",
+              "RelativeDocumentMoniker": "AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml.cs",
+              "ToolTip": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml.cs",
+              "RelativeToolTip": "AmxBookstore\\Pages\\Protected\\ProtectedPage.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:18:25.337Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+﻿@page
+@model AmxBookstore.Pages.Protected.Orders.IndexModel
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<h2>Orders</h2>
+
+<a asp-page="./Create" class="btn btn-primary mb-3" id="createOrderButton">Create New Order</a>
+
+<form id="filterForm" class="mb-4">
+    <div class="form-row d-flex flex">
+        <div class="form-group col-md-2 mr-2 m-1">
+            <label for="StartDate">Start Date</label>
+            <input type="date" class="form-control" id="StartDate" name="StartDate" />
+        </div>
+        <div class="form-group col-md-2 mr-2 m-1">
+            <label for="EndDate">End Date</label>
+            <input type="date" class="form-control" id="EndDate" name="EndDate" />
+        </div>
+        <div class="form-group col-md-2 mr-2 m-1">
+            <label for="Status">Status</label>
+            <select class="form-control" id="Status" name="Status">
+                <option value="">Any</option>
+                <option value="Pending">Pending</option>
+                <option value="Processing">Processing</option>
+                <option value="Completed">Completed</option>
+                <option value="Canceled">Canceled</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2 mr-2 m-1">
+            <label for="MinTotal">Min Total</label>
+            <input type="number" step="0.01" class="form-control" id="MinTotal" name="MinTotal" />
+        </div>
+        <div class="form-group col-md-2 mr-2 m-1">
+            <label for="MaxTotal">Max Total</label>
+            <input type="number" step="0.01" class="form-control" id="MaxTotal" name="MaxTotal" />
+        </div>
+        <div class="form-group col-md-2 align-self-end m-1">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th class="actions-column">Actions</th>
+        </tr>
+    </thead>
+    <tbody id="ordersTableBody">
+        <!-- Orders will be populated here by JavaScript -->
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-between mt-3">
+    <button id="prevPage" class="btn btn-secondary" disabled>Previous</button>
+    <button id="nextPage" class="btn btn-secondary">Next</button>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        let currentPage = 1;
+        const limit = 10;
+
+        async function fetchOrders(page) {
+            const params = new URLSearchParams({
+                page: page,
+                limit: limit,
+                startDate: document.getElementById('StartDate').value,
+                endDate: document.getElementById('EndDate').value,
+                status: document.getElementById('Status').value,
+                minTotal: document.getElementById('MinTotal').value,
+                maxTotal: document.getElementById('MaxTotal').value
+            });
+
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Orders?${params.toString()}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const orders = await response.json();
+
+                const tableBody = document.getElementById('ordersTableBody');
+                tableBody.innerHTML = ''; // Clear existing rows
+                orders.forEach(order => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                                <td>${order.id}</td>
+                                <td>${order.totalAmount}</td>
+                                <td>${order.status}</td>
+                                <td class="actions-column">
+                                    <a href="/Protected/Orders/Edit?id=${order.id}" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a href="/Protected/Orders/Delete?id=${order.id}" class="btn btn-sm btn-outline-danger">Delete</a>
+                                </td>
+                            `;
+                    tableBody.appendChild(row);
+                });
+
+                // Enable/disable pagination buttons based on current page and total pages
+                document.getElementById('prevPage').disabled = page <= 1;
+                document.getElementById('nextPage').disabled = page >= 100;
+
+                hideActionsForClient();
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to fetch orders',
+                    text: error.message,
+                });
+            }
+        }
+
+        function hideActionsForClient() {
+            const token = localStorage.getItem('jwt');
+            if (token) {
+                const userRole = JSON.parse(token).role;
+                if (userRole === 'Client') {
+                    if (document.querySelectorAll('.actions-column'))
+                        document.querySelectorAll('.actions-column').forEach(column => column.remove());
+                    if (document.getElementById('createOrderButton'))
+                        document.getElementById('createOrderButton').remove();
+                }
+            }
+        }
+
+        document.getElementById('filterForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            currentPage = 1; // Reset to the first page when applying new filters
+            fetchOrders(currentPage);
+        });
+
+        document.getElementById('prevPage').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                fetchOrders(currentPage);
+            }
+        });
+
+        document.getElementById('nextPage').addEventListener('click', () => {
+            currentPage++;
+            fetchOrders(currentPage);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchOrders(currentPage);
+        });
+
+        async function fetchWithToken(url, options = {}) {
+            const token = localStorage.getItem('jwt');
+            if (!token) {
+                throw new Error('No JWT token found in localStorage');
+            }
+
+            const headers = new Headers(options.headers || {});
+            headers.append('Authorization', `Bearer ${JSON.parse(token).accessToken}`);
+
+            const updatedOptions = {
+                ...options,
+                headers: headers
+            };
+
+            return fetch(url, updatedOptions);
+        }
+    </script>
+}

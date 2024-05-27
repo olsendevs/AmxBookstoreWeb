@@ -1,0 +1,115 @@
+﻿@page
+@model AmxBookstore.Pages.Protected.Users.DeleteModel
+@{
+    ViewData["Title"] = "Delete User";
+}
+
+<h2>Delete User</h2>
+
+<h3>Are you sure you want to delete this user?</h3>
+
+<div>
+    <h4>User</h4>
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">User ID</dt>
+            <dd class="col-sm-10" id="UserId"></dd>
+            <dt class="col-sm-2">Name</dt>
+            <dd class="col-sm-10" id="Name"></dd>
+            <dt class="col-sm-2">Email</dt>
+            <dd class="col-sm-10" id="Email"></dd>
+            <dt class="col-sm-2">Role</dt>
+            <dd class="col-sm-10" id="Role"></dd>
+        </dl>
+    </div>
+
+    <form id="deleteUserForm" method="post">
+        <input type="hidden" id="UserIdInput" name="UserId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        async function fetchUser(id) {
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Users/${id}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const user = await response.json();
+                document.getElementById('UserId').innerText = user.id;
+                document.getElementById('Name').innerText = user.name;
+                document.getElementById('Email').innerText = user.email;
+                document.getElementById('Role').innerText = user.role;
+                document.getElementById('UserIdInput').value = user.id;
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error fetching user',
+                    text: error.message,
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const userId = urlParams.get('id');
+            fetchUser(userId);
+        });
+
+        document.getElementById('deleteUserForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const userId = document.getElementById('UserIdInput').value;
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Users/${userId}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'User deleted successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    }).then(() => {
+                        window.location.href = './Index';
+                    });
+                } else {
+                    const errorData = await response.json();
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Failed to delete user',
+                        text: errorData.message || 'An error occurred',
+                    });
+                }
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to delete user',
+                    text: error.message,
+                });
+            }
+        });
+
+        async function fetchWithToken(url, options = {}) {
+            const token = localStorage.getItem('jwt');
+            if (!token) {
+                throw new Error('No JWT token found in localStorage');
+            }
+
+            const headers = new Headers(options.headers || {});
+            headers.append('Authorization', `Bearer ${JSON.parse(token).accessToken}`);
+
+            const updatedOptions = {
+                ...options,
+                headers: headers
+            };
+
+            return fetch(url, updatedOptions);
+        }
+    </script>
+}

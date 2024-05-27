@@ -1,0 +1,115 @@
+﻿@page
+@model AmxBookstore.Pages.Protected.Users.IndexModel
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>Users</h2>
+
+<a asp-page="./Create" class="btn btn-primary mb-3">Create New User</a>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="usersTableBody">
+        <!-- Users will be populated here by JavaScript -->
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-between mt-3">
+    <button id="prevPage" class="btn btn-secondary" disabled>Previous</button>
+    <button id="nextPage" class="btn btn-secondary">Next</button>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        let currentPage = 1;
+        const limit = 10;
+
+        async function fetchUsers(page) {
+            const params = new URLSearchParams({
+                page: page,
+                limit: limit,
+            });
+
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Users?${params.toString()}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const users = await response.json();
+
+                const tableBody = document.getElementById('usersTableBody');
+                tableBody.innerHTML = ''; // Clear existing rows
+                users.forEach(user => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                                <td>${user.id}</td>
+                                <td>${user.name}</td>
+                                <td>${user.email}</td>
+                                <td>${user.role}</td>
+                                <td>
+                                    <a href="/Protected/Users/Edit?id=${user.id}" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a href="/Protected/Users/Delete?id=${user.id}" class="btn btn-sm btn-outline-danger">Delete</a>
+                                </td>
+                            `;
+                    tableBody.appendChild(row);
+                });
+
+                // Enable/disable pagination buttons based on current page and total pages
+                document.getElementById('prevPage').disabled = page <= 1;
+                document.getElementById('nextPage').disabled = page >= 100;
+
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to fetch users',
+                    text: error.message,
+                });
+            }
+        }
+
+
+        document.getElementById('prevPage').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                fetchUsers(currentPage);
+            }
+        });
+
+        document.getElementById('nextPage').addEventListener('click', () => {
+            currentPage++;
+            fetchUsers(currentPage);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchUsers(currentPage);
+        });
+
+        async function fetchWithToken(url, options = {}) {
+            const token = localStorage.getItem('jwt');
+            if (!token) {
+                throw new Error('No JWT token found in localStorage');
+            }
+
+            const headers = new Headers(options.headers || {});
+            headers.append('Authorization', `Bearer ${JSON.parse(token).accessToken}`);
+
+            const updatedOptions = {
+                ...options,
+                headers: headers
+            };
+
+            return fetch(url, updatedOptions);
+        }
+    </script>
+}

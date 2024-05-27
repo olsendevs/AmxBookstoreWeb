@@ -1,0 +1,109 @@
+﻿@page
+@model AmxBookstore.Pages.Protected.Orders.CreateModel
+@{
+    ViewData["Title"] = "Create Order";
+}
+
+<h2>Create Order</h2>
+
+<form id="createOrderForm">
+    <div class="form-group">
+        <label for="ClientId">Client ID</label>
+        <input type="text" class="form-control" id="ClientId" name="ClientId" required />
+    </div>
+
+    <div class="form-group">
+        <label>Products</label>
+        <div id="productsContainer">
+            <!-- Product items will be added here dynamically -->
+        </div>
+        <button type="button" class="btn btn-secondary mt-2" onclick="addProduct()">Add Product</button>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Create</button>
+</form>
+
+@section Scripts {
+    <script>
+        function addProduct() {
+            const productIndex = document.querySelectorAll('.product-item').length;
+            const productHtml = `
+                        <div class="product-item mb-2">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="ProductId${productIndex}">Product ID</label>
+                                    <input type="text" class="form-control" id="ProductId${productIndex}" name="ProductId${productIndex}" required />
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="Quantity${productIndex}">Quantity</label>
+                                    <input type="number" class="form-control" id="Quantity${productIndex}" name="Quantity${productIndex}" required />
+                                </div>
+                                <div class="form-group col-md-2 d-flex align-items-end mt-2">
+                                    <button type="button" class="btn btn-danger" onclick="removeProduct(this)">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+            document.getElementById('productsContainer').insertAdjacentHTML('beforeend', productHtml);
+        }
+
+        function removeProduct(button) {
+            button.closest('.product-item').remove();
+        }
+
+        document.getElementById('createOrderForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const products = [];
+            document.querySelectorAll('.product-item').forEach((item, index) => {
+                const productId = item.querySelector(`#ProductId${index}`).value;
+                const quantity = item.querySelector(`#Quantity${index}`).value;
+                products.push({ productId, quantity });
+            });
+
+            const order = {
+                clientId: document.getElementById('ClientId').value,
+                status: "Created",
+                products: products
+            };
+
+            try {
+                const response = await fetchWithToken('http://localhost:32787/api/v1/Orders', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(order)
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Order created successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    }).then(() => {
+                        window.location.href = './Index';
+                    });
+                } else if (response.status == 401 || response.status == 403) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Failed to create user',
+                        text: 'Unauthorized',
+                    });
+                } else {
+                    const errorData = await response.json();
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Failed to create order',
+                        text: errorData.message || 'An error occurred',
+                    });
+                }
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to create order',
+                    text: error.message,
+                });
+            }
+        });
+    </script>
+}

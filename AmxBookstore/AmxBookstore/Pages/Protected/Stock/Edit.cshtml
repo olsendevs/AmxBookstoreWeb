@@ -1,0 +1,111 @@
+﻿@page
+@model AmxBookstore.Pages.Protected.Stock.EditModel
+@{
+    ViewData["Title"] = "Edit Stock";
+}
+
+<h2>Edit Stock</h2>
+
+<form id="editStockForm">
+    <input type="hidden" id="BookId" name="BookId" />
+    <div class="form-group">
+        <label for="BookId">Book ID</label>
+        <input type="text" class="form-control" id="BookIdDisplay" name="BookIdDisplay" disabled />
+    </div>
+    <div class="form-group">
+        <label for="Quantity">Quantity</label>
+        <input type="number" class="form-control" id="Quantity" name="Quantity" required />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        async function fetchStock(id) {
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Stocks/product/${id}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const stock = await response.json();
+
+                console.log(stock)
+                document.getElementById('BookId').value = stock.id;
+                document.getElementById('BookIdDisplay').value = stock.bookId;
+                document.getElementById('Quantity').value = stock.quantity;
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error fetching stock',
+                    text: error.message,
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookId = urlParams.get('id');
+            fetchStock(bookId);
+        });
+
+        document.getElementById('editStockForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const stock = {
+                Id: document.getElementById('BookId').value,
+                bookId: document.getElementById('BookIdDisplay').value,
+                quantity: document.getElementById('Quantity').value
+            };
+            console.log(stock)
+            try {
+                const response = await fetchWithToken(`http://localhost:32787/api/v1/Stocks/${stock.Id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: stock.quantity
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Stock updated successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    }).then(() => {
+                        window.location.href = '../Books/Index';
+                    });
+                } else {
+                    const errorData = await response.json();
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Failed to update stock',
+                        text: errorData.message || 'An error occurred',
+                    });
+                }
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to update stock',
+                    text: error.message,
+                });
+            }
+        });
+
+        async function fetchWithToken(url, options = {}) {
+            const token = localStorage.getItem('jwt');
+            if (!token) {
+                throw new Error('No JWT token found in localStorage');
+            }
+
+            const headers = new Headers(options.headers || {});
+            headers.append('Authorization', `Bearer ${JSON.parse(token).accessToken}`);
+
+            const updatedOptions = {
+                ...options,
+                headers: headers
+            };
+
+            return fetch(url, updatedOptions);
+        }
+    </script>
+}

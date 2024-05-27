@@ -1,0 +1,21 @@
+﻿@page
+@model AmxBookstore.Pages.ProtectedPageModel
+@{
+    ViewData["Title"] = "Protected Page";
+}
+
+<h2>You signed-in!</h2>
+
+<p>You are successfully authenticated and authorized.</p>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const token = localStorage.getItem('jwt');
+
+            if (!token) {
+                window.location.href = '/Login';
+            }
+        });
+    </script>
+}
