@@ -4084,11 +4084,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\AmxBookstore.csproj",
+      "projectUniqueName": "D:\\docs\\Amx\\web\\AmxBookstoreWeb\\AmxBookstore\\AmxBookstore\\AmxBookstore.csproj",
       "projectName": "AmxBookstore",
-      "projectPath": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\AmxBookstore.csproj",
+      "projectPath": "D:\\docs\\Amx\\web\\AmxBookstoreWeb\\AmxBookstore\\AmxBookstore\\AmxBookstore.csproj",
       "packagesPath": "C:\\Users\\olsen\\.nuget\\packages\\",
-      "outputPath": "D:\\docs\\Amx\\web\\AmxBookstore\\AmxBookstore\\obj\\",
+      "outputPath": "D:\\docs\\Amx\\web\\AmxBookstoreWeb\\AmxBookstore\\AmxBookstore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",

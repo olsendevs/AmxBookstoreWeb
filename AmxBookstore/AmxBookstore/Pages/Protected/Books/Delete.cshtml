@@ -37,7 +37,7 @@
     <script>
         async function fetchBook(id) {
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Books/${id}`);
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Books/${id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -68,7 +68,7 @@
 
             const bookId = document.getElementById('BookIdInput').value;
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Books/${bookId}`, {
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Books/${bookId}`, {
                     method: 'DELETE'
                 });
 

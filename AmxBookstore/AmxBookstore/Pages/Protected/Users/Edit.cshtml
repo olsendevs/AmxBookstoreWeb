@@ -32,7 +32,7 @@
     <script>
         async function fetchUser(id) {
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Users/${id}`);
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Users/${id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -67,7 +67,7 @@
             };
 
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Users/`, {
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Users/`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(user)

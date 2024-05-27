@@ -9,99 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AmxBookstore
 build_property.RootNamespace = AmxBookstore
-build_property.ProjectDir = D:\docs\Amx\web\AmxBookstore\AmxBookstore\
+build_property.ProjectDir = D:\docs\Amx\web\AmxBookstoreWeb\AmxBookstore\AmxBookstore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\docs\Amx\web\AmxBookstore\AmxBookstore
+build_property.MSBuildProjectDirectory = D:\docs\Amx\web\AmxBookstoreWeb\AmxBookstore\AmxBookstore
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Error.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Index.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Login.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Privacy.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Books/Create.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Books/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXEJvb2tzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Books/Delete.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Books/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXEJvb2tzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Books/Edit.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Books/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXEJvb2tzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Books/Index.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXEJvb2tzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Create.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXE9yZGVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Delete.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXE9yZGVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Edit.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXE9yZGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Index.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXE9yZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/ProtectedPage.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/ProtectedPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFByb3RlY3RlZFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Stock/Edit.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Stock/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFN0b2NrXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Users/Create.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFVzZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Users/Delete.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFVzZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Users/Edit.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFVzZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Protected/Users/Index.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Protected/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVjdGVkXFVzZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/_ViewImports.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/_ViewStart.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/docs/Amx/web/AmxBookstore/AmxBookstore/Pages/Shared/_Layout.cshtml]
+[D:/docs/Amx/web/AmxBookstoreWeb/AmxBookstore/AmxBookstore/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mk9swxw74a

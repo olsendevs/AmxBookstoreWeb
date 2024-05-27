@@ -24,7 +24,7 @@
     <script>
         async function fetchStock(id) {
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Stocks/product/${id}`);
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Stocks/product/${id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -59,7 +59,7 @@
             };
             console.log(stock)
             try {
-                const response = await fetchWithToken(`http://localhost:32787/api/v1/Stocks/${stock.Id}`, {
+                const response = await fetchWithToken(`http://localhost:5000/api/v1/Stocks/${stock.Id}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: stock.quantity
